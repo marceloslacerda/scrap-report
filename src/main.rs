@@ -36,8 +36,8 @@ pub fn scrape_url(url: &str, xpath: &str) -> Result<String, ScraperError> {
 
 fn main() {
     // Example usage
-    let url = "https://example.com";
-    let xpath = "//h1"; // Replace this with your desired XPath expression
+    let url = "https://www.msl09.com.br/";
+    let xpath = "h1"; // Replace this with your desired XPath expression
 
     match scrape_url(url, xpath) {
         Ok(result) => println!("Match found: {}", result),
